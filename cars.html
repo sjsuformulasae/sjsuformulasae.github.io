@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Spartan Racing | Our Cars</title>
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600" rel="stylesheet" type="text/css">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+  </head>
+
+  <body>
+    <div style="overflow:hidden;"></div>
+
+    <!--main-nav-start-->
+  	<nav class="main-nav-outer" id="test">
+  		<div class="container">
+        <ul style="margin-left: 70px" class="main-nav">
+  					<li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="cars.html" class="res-nav-selected">Our Cars</a></li>
+            <li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
+  					<li><a href="sponsors.html">Our Sponsors</a></li>
+  					<li><a href="join.html">Get Involved</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+  	  </div>
+  	</nav>
+    <!--main-nav-end-->
+    <header class="carsHeader" id="header"><!--header-start-->
+  		<div class="container">
+  	    	<!--<figure class="logo animated fadeInDown delay-07s">
+  	        	<a href="#"><img src="img/logo.png" alt=""></a>
+  	        </figure>-->
+          <div>
+  	        <h1 class="animated fadeInDown delay-05s col-sm-6">One Team</h1>
+            <h1 class="animated fadeInDown delay-07s col-sm-8" style="color:#ffc801;">9 Years</h1>
+            <h1 class="animated fadeInDown delay-09s col-sm-10">9 Cars</h1>
+          </div>
+  	        <!-- <ul class="we-create animated fadeInUp delay-1s">
+  	        	<li>AND WHY WE RACE</li>
+  	        </ul> -->
+  				</div>
+  	</header>
+    <style>
+      #titleText {
+        font-size: 50px;
+        text-align: center;
+        color: #ffd700;
+      }
+
+      #titleTextContainer {
+        background-color: #3e54a1;
+        padding-top: 1px;
+        padding-bottom: 5px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 300px;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 5px #888888;
+      }
+
+      #headerText {
+        font-size: 30px;
+        color: #001333;
+      }
+
+      .mainCol {
+        height: 350px;
+      }
+
+      #headerImg {
+        width: 100%;
+        align: middle;
+        border-style: solid;
+        border-color: #fcfdff;
+        border-right-color: grey;
+      }
+
+      .specList {
+        font-size: 23px;
+        font-family: sans-serif;
+        color: #424344;
+      }
+
+      .specListElement {
+        margin-top: 10px;
+      }
+
+      .parallax {
+        /* The image used */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/maintnence.jpg");
+        /* Set a specific height */
+        min-height:600px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #developmentDiv {
+        text-align: center;
+        height: 300px;
+        width: 100%;
+      }
+
+      .developmentElement {
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        font-size: 18px;
+      }
+
+      .technicalCol h3 {
+        font-weight: bold;
+      }
+    </style>
+
+
+    <!--header-start-->
+
+    <!-- <section style="padding-top: 60px; padding-bottom: 80px; ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mainCol animated slideInLeft 6s">
+            <img id="headerImg" src="img/cars/sr9.jpg"></img>
+          </div>
+          <div class="col-lg-4 mainCol animated fadeIn">
+            <h4 id="headerText" class="animated fadeIn">SR-9 (2017)</h4>
+            <ul id="currentCarSpec" class="specList">
+              <li class="specListElement">Engine: Triumph Street Triple 675</li>
+              <li class="specListElement">Horsepower: 80hp @9000rpm</li>
+              <li class="specListElement">0-60 mph: </li>
+              <li class="specListElement">Torque: 52 ft-lbs</li>
+              <li class="specListElement">Weight: 440 lbs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Parallax Start -->
+    <div class="parallax" style="padding-top: 70px;">
+      <div id="developmentDiv" class="developmentElement">
+        <p class="developmentElement" style="font-size: 32px;">Technical Development</p>
+        <div style="height: 1px; width: 200px; margin: 20px auto; background-color: white;"></div>
+
+        <div class="container" style="margin-top: 70px;">
+          <div class="row">
+            <div class="col-md-4 technicalCol wow fadeIn">
+              <h3 class="developmentElement">Data Acquisition & Telemetry</h3>
+              <p class="developmentElement">For SR-10, a telemetry system is in development so our student engineers can decipher data while the vehicles are in operation. </p>
+            </div>
+            <div class="col-md-4 technicalCol wow fadeIn">
+              <h3 class="developmentElement">Structural Development</h3>
+              <p class="developmentElement">A complete re-design of our frame for SR-8 may increase torsional stiffness by up to 50% without adding any weight.</p>
+            </div>
+            <div class="col-md-4 technicalCol wow fadeIn">
+              <h3 class="developmentElement">Aerodynamics Package</h3>
+              <p class="developmentElement">The aerodynamics team formed for SR-5 is learning aerodynamics principles and development software such as StarCCM+ for CFD, SolidWorks and Siemens NX for design, and Siemens Fibersim for composites analysis to produce a suitable wing package.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-2 col-md-4 technicalCol wow fadeIn">
+              <h3 class="developmentElement">Fuel System</h3>
+              <p class="developmentElement">The team has chosen to run E85 ethanol as fuel and remains on the few teams to stick with the lighter three cylinder engine.</p>
+            </div>
+            <div class="col-md-4 technicalCol wow fadeIn">
+              <h3 class="developmentElement">Ergonomics</h3>
+              <p class="developmentElement"> As opposed to fitting the driver into the car, the chassis team is focusing more on building the car around the driver.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-section">
+    	<div class="container">
+        	<div class="row">
+    			<figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                	<img  src="img/cars/sr9.jpg"alt="">
+                </figure>
+            	<div class="col-lg-6 col-sm-8 featured-work">
+                	<h2>SR-9</h2>
+                	<P class="padding-b">Spartan Racer 9</P>
+                	<div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                        	<i class="fa-calendar"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Triumph Street Triple 675</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                        	<i class="fa-google"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 80hp</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                        	<i class="fa-pencil"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 52 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 420 lbs</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </section>
+
+    <section class="main-section alabaster">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-6 col-sm-8 featured-work">
+                	<h2>SR-8</h2>
+                	<P class="padding-b">Spartan Racer 8</P>
+                	<div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                        	<i class="fa-calendar"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda CBR600 F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                        	<i class="fa-google"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 73hp</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                        	<i class="fa-pencil"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 37 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 420 lbs</h3>
+                        </div>
+                    </div>
+                </div>
+              <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                <img  src="img/cars/sr8.jpg"alt="">
+              </figure>
+            </div>
+    	</div>
+    </section>
+
+    <section class="main-section">
+      <div class="container">
+          <div class="row">
+          <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                  <img  src="img/cars/sr7.jpg"alt="">
+                </figure>
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-7</h2>
+                  <P class="padding-b">Spartan Racer 7</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda CBR600 F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 73hp</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 37 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 420 lbs</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="main-section alabaster">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-6 col-sm-8 featured-work">
+                	<h2>SR-6</h2>
+                	<P class="padding-b">Spartan Racer 6</P>
+                	<div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                        	<i class="fa-calendar"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                        	<i class="fa-google"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 80hp</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                    	<!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                        	<i class="fa-pencil"></i>
+                        </div> -->
+                    	<div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 45 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 440 lbs</h3>
+                        </div>
+                    </div>
+                </div>
+              <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                <img  src="img/cars/sr6.jpg"alt="">
+              </figure>
+            </div>
+    	</div>
+    </section>
+
+    <section class="main-section">
+      <div class="container">
+          <div class="row">
+          <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                  <img  src="img/cars/sr5.jpg"alt="">
+                </figure>
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-5</h2>
+                  <P class="padding-b">Spartan Racer 5</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 76 HP</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 45ft-lb</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 420</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="main-section alabaster">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-4</h2>
+                  <P class="padding-b">Spartan Racer 4</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 82 HP</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 45 ft-lb</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 405 lb</h3>
+                        </div>
+                    </div>
+                </div>
+              <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                <img  src="img/cars/sr4.jpg"alt="">
+              </figure>
+            </div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="container">
+          <div class="row">
+          <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                  <img  src="img/cars/sr3.jpg"alt="">
+                </figure>
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-3</h2>
+                  <P class="padding-b">Spartan Racer 3</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 75 HP</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 40 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 450 lb</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="main-section alabaster">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-2</h2>
+                  <P class="padding-b">Spartan Racer 2</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 75HP</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 37 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 450 lb</h3>
+                        </div>
+                    </div>
+                </div>
+              <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                <img  src="img/cars/sr2.jpg"alt="">
+              </figure>
+            </div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="container">
+          <div class="row">
+          <figure class="col-lg-6 col-sm-4 wow fadeInLeft" war>
+                  <img  src="img/cars/sr1.jpg"alt="">
+                </figure>
+              <div class="col-lg-6 col-sm-8 featured-work">
+                  <h2>SR-1</h2>
+                  <P class="padding-b">Spartan Racer 1</P>
+                  <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-02s">
+                          <i class="fa-calendar"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>Engine: Honda F4i</h3>
+                            </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-04s">
+                          <i class="fa-google"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-04s">
+                            <h3>Horsepower: 73 HP</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-06s">
+                            <h3>Torque: 35 ft-lbs</h3>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                      <!-- <div class="featured-box-col1 wow fadeInRight delay-06s">
+                          <i class="fa-pencil"></i>
+                        </div> -->
+                      <div class="featured-box-col2 wow fadeInRight delay-08s">
+                            <h3>Weight: 470</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- Parallax End -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div style="float:right; margin-right:35px;" class="footer-logo "><a href="#"><img src="favicon.png" alt=""></a></div>
+            </div>
+            <div class="col-md-5">
+              <ul class="social-link">
+                <li class="flickr"><a href="https://www.flickr.com/photos/132571020@N05/"><i class="fa fa-flickr"></i></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/user/sjsuformulasae"><i class="fa fa-youtube-play"></i></a></li>
+                <li class="facebook"><a href="https://www.facebook.com/SpartanRacingSJSU?fref=ts"><i class="fa fa-facebook-square"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/sjsuformulasae/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <span style="text-align:center;"class="copyright">&copy; Spartan Racing. All Rights Reserved</span>
+          </div>
+        </div>
+    </footer>
+    <script>
+    new WOW().init();
+</script>
+  </body>
+</html>
