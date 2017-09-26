@@ -109,14 +109,14 @@
 	                        <h3 class="smallify">Through this team you will broaden your learning experience by covering a wide range of engineering material</h3>
 	                  </div>
 	                </div>
-									<div class="featured-box">
-										<div class="featured-box-col1 wow fadeInRight delay-08s">
-												<i class="fa-briefcase "></i>
-										</div>
-										<div class="featured-box-col2 wow fadeInRight delay-08s">
-													<h3 class="smallify">You will build ties between the SJSU COE and companies in Silicon Valley through FSAE</h3>
-										</div>
-									</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-08s">
+								<i class="fa-briefcase "></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-08s">
+									<h3 class="smallify">You will build ties between the SJSU COE and companies in Silicon Valley through FSAE</h3>
+						</div>
+					</div>
 		      		</div>
 		  		</div>
 			</div>
@@ -125,15 +125,14 @@
 	<!-- Map and Instagram Feed -->
 	<style>
 		#map {
-			height: 522px;
-			width: 528px;
-			margin: 30px auto;
+			height: 360px;
+			margin: 0 auto 30px;
 		}
 
-		.addRightBorder {
+		.addLeftBorder {
 			border-style: solid;
 			border-color: white;
-			border-right-color: lightgrey;
+			border-left-color: lightgrey;
 		}
 
 		#instafeed {
@@ -158,15 +157,27 @@
 
 		<div class="container" style="width: 100%; padding: 0; text-align: center; margin: 20px 0px 0px 0px;">
 			<div class="row">
-				<div class="col-md-6  addRightBorder">
+				<div class="col-md-6 ">
 					<h3 class="bigify">Where to Find Us</h3>
 					<h6 class="lildrop"><i class="fa fa-map-marker"></i> 1 Washington Sq, San Jose, CA 95192</h6>
-					<div id="map"></div>
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<div id="map"></div>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 addLeftBorder" style="margin-bottom:15px;">
 					<h3 class="bigify">Check Out What We Are Up To</h3>
 					<h6 class="lildrop"><i class="fa fa-instagram"></i> sjsuformulasae</h6>
-					<div id="instafeed"></div>
+					<div class="row">
+						<div id="instafeed-1" style="margin-right:15px;"></div>
+					</div>
+					<div class="row">
+						<div id="instafeed-2" style="margin-right:15px;"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -204,20 +215,54 @@
 }
 </script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgKaPd68lc50kCO-8x3klhWCqV6xL7I68&callback=initMap"
-		async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgKaPd68lc50kCO-8x3klhWCqV6xL7I68&callback=initMap"
+async defer></script>
 
-		<script type="text/javascript">
-		var feed = new Instafeed({
-	get: 'user',
-	limit: '4',
-	resolution: 'low_resolution',
-	userId: '1493096399',
-	accessToken: '1493096399.1677ed0.c10b1e9b8e5640bb8af4796c34882817',
-	template:
-		'<a href="{{link}}"><img style="border-style: solid; border-color: grey; border-width: 1px;width: 250px; height: 250px; margin-left: 11px; margin-right: 11px; margin-bottom: 20px;" src="{{image}}" /></a>'
-});
-feed.run();
+<script type="text/javascript">
+
+	var row1 = new Instafeed({
+		get: 'user',
+		limit: '3',
+		resolution: 'low_resolution',
+		target: 'instafeed-1',
+		userId: '1493096399',
+		accessToken: '1493096399.1677ed0.c10b1e9b8e5640bb8af4796c34882817',
+		template:
+				'<div class="col-md-4"><a href="{{link}}"><img style="border-style: solid; border-color: grey; border-width: 1px;" src="{{image}}" /></a></div>',
+
+	});
+
+	var numOfRuns = 0;
+	var row2 = new Instafeed({
+		get: 'user',
+		limit: '6',
+		resolution: 'low_resolution',
+		target: 'instafeed-2',
+		userId: '1493096399',
+		accessToken: '1493096399.1677ed0.c10b1e9b8e5640bb8af4796c34882817',
+		template:
+				'<div class="col-md-4"><a href="{{link}}"><img style="border-style: solid; border-color: grey; border-width: 1px;" src="{{image}}" /></a></div>',
+		filter: function(image) {
+			// This function will ensure that the second row will only output the last 3 of the 6 images
+			if(numOfRuns < 3)
+			{
+				numOfRuns++;
+				return false;
+			}
+
+			else
+			{
+				numOfRuns++;
+				return true;
+			}
+
+		}
+	});
+
+	row1.run();
+	row2.run();
+
+
 </script>
 
 <script type="text/javascript">
