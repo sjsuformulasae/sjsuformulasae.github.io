@@ -664,9 +664,12 @@
     color: #fff;
     animation: titleAnimation 30s linear infinite 0s;
 }
+/*
 .cb-slideshow li:nth-child(1) span {
     background-image: url(../img/launch.mp4)
 }
+*/
+
 .cb-slideshow li:nth-child(2) span {
     background-image: url(../img/team-lg.jpg);
     animation-delay: 6s;
