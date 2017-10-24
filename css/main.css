@@ -664,26 +664,26 @@
     color: #fff;
     animation: titleAnimation 30s linear infinite 0s;
 }
-/*
+
 .cb-slideshow li:nth-child(1) span {
     background-image: url(../img/launch.mp4)
 }
-*/
+
 
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../img/team-lg.jpg);
+    background-image: url(../img/team.jpg);
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../img/ontheline-lg.jpg);
+    background-image: url(../img/ontheline.jpg);
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(../img/onthetrack-lg.jpg);
+    background-image: url(../img/onthetrack.jpg);
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../img/action-lg.jpg);
+    background-image: url(../img/action.jpg);
     animation-delay: 24s;
 }
 
