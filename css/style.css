@@ -137,7 +137,7 @@ p {
 .headersp {
 	text-align: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url(../img/winners.jpg) left bottom repeat;
+		url(../img/winners-lg.jpg) left bottom repeat;
 	background-size: 100% auto;
 	padding: 340px 0;
 	background-repeat:
