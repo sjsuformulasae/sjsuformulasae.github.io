@@ -109,21 +109,14 @@
       }
 
       .parallax {
-        /* The image used */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/maintnence.jpg");
-        /* Set a specific height */
-        min-height:600px;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+          padding-top: 70px;
+          min-height: 600px;
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/maintnence.jpg") no-repeat fixed center;
+          background-size: cover;
       }
 
       #developmentDiv {
         text-align: center;
-        height: 300px;
-        width: 100%;
       }
 
       .developmentElement {
@@ -161,7 +154,7 @@
     </section> -->
 
     <!-- Parallax Start -->
-    <div class="parallax" style="padding-top: 70px;">
+    <div class="parallax">
       <div id="developmentDiv" class="developmentElement">
         <p class="developmentElement" style="font-size: 32px;">Technical Development</p>
         <div style="height: 1px; width: 200px; margin: 20px auto; background-color: white;"></div>
