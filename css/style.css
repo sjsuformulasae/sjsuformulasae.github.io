@@ -133,7 +133,7 @@ p {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url(../img/cars/5cars.png) bottom center no-repeat;
 	background-size: cover;
-	padding: 340px 0;
+	padding: 320px 0;
 }
 .headersp {
 	text-align: center;
@@ -163,24 +163,18 @@ p {
 	color: #fff;
 }
 
-.we-create {
-	padding: 0;
-	margin: 0px 0 55px;
-}
 .wp-pic {
 	margin-bottom: 20px;
 }
-.we-create li {
-	display: inline-block;
+
+.we-create {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: #779ecb;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin: 0 5px 0 0;
+	margin: 0px 0 55px;
 	padding: 0 0 0 15px;
-}
-.we-create li:first-child {
 	background: none;
 }
 
