@@ -38,27 +38,31 @@
 
 </head>
 <body>
-	<div style="overflow:hidden;"></div>
-	<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+	<!--main-nav-start-->
+	<nav class="main-nav-outer" id="nav-bar">
 		<div class="container">
-	        <ul style="margin-left: 70px" class="main-nav">
-							<li><a class="res-nav-selected" href="aboutUs.html">About Us</a></li>
-	            <li><a href="cars.html">Our Cars</a></li>
-							<li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
-							<li><a href="sponsors.html">Our Sponsors</a></li>
-							<li><a href="join.html">Get Involved</a></li>
+	        <ul class="main-nav">
+				<li><a class="res-nav-selected" href="aboutUs.html">About Us</a></li>
+				<li><a href="cars.html">Our Cars</a></li>
+				<li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
+				<li><a href="sponsors.html">Our Sponsors</a></li>
+				<li><a href="join.html">Get Involved</a></li>
 	        </ul>
 	        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
 	    </div>
-	</nav><!--main-nav-end-->
-	<header class="header" id="header"><!--header-start-->
+	</nav>
+	<!--main-nav-end-->
+
+	<!--header-start-->
+	<header class="header" id="header">
 		<div class="container">
 	        <h1 class="animated fadeInDown delay-07s goleft">WHO WE ARE</h1>
 	        <ul class="we-create animated fadeInUp delay-1s goleft">
 	        	<li style="color:#ffc801;">AND WHY WE RACE</li>
 	        </ul>
 				</div>
-	</header><!--header-end-->
+	</header>
+	<!--header-end-->
 
 	<!--main-section client-part-start-->
 	<section class="main-section client-part1" id="client">
@@ -264,7 +268,10 @@ async defer></script>
 
 <script type="text/javascript">
 	$(document).ready(function(e) {
-		$('#test').scrollToFixed();
+		// Fixed nav-bar
+		$('#nav-bar').scrollToFixed();
+
+		// Hamburger menu
 		$('.res-nav_click').click(function() {
 			$('.main-nav').slideToggle();
 			return false;
