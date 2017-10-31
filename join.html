@@ -37,12 +37,10 @@
 
 </head>
 <body>
-  <div style="overflow:hidden;"></div>
-
   <!--main-nav-start-->
   <nav class="main-nav-outer" id="test">
     <div class="container">
-      <ul style="margin-left: 70px" class="main-nav">
+      <ul class="main-nav" style="z-index: 1;">
           <li><a href="aboutUs.html">About Us</a></li>
           <li><a href="cars.html">Our Cars</a></li>
           <li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
@@ -274,4 +272,17 @@
   <script>
   new WOW().init();
 </script>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      // Fixed nav-bar
+      $('#nav-bar').scrollToFixed();
+
+      // Hamburger menu
+      $('.res-nav_click').click(function() {
+        $('.main-nav').slideToggle();
+        return false;
+      });
+    });
+  </script>
+
 </body>

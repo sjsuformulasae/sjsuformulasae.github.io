@@ -31,17 +31,15 @@
   </head>
 
   <body>
-    <div style="overflow:hidden;"></div>
-
     <!--main-nav-start-->
-  	<nav class="main-nav-outer" id="test">
+  	<nav class="main-nav-outer" id="nav-bar">
   		<div class="container">
-        <ul style="margin-left: 70px" class="main-nav">
-  					<li><a href="aboutUs.html">About Us</a></li>
+        <ul class="main-nav">
+            <li><a href="aboutUs.html">About Us</a></li>
             <li><a href="cars.html" class="res-nav-selected">Our Cars</a></li>
             <li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
-  					<li><a href="sponsors.html">Our Sponsors</a></li>
-  					<li><a href="join.html">Get Involved</a></li>
+            <li><a href="sponsors.html">Our Sponsors</a></li>
+            <li><a href="join.html">Get Involved</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
   	  </div>
@@ -445,6 +443,19 @@
     </footer>
     <script>
     new WOW().init();
-</script>
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            // Fixed nav-bar
+            $('#nav-bar').scrollToFixed();
+
+            // Hamburger menu
+            $('.res-nav_click').click(function() {
+                $('.main-nav').slideToggle();
+                return false;
+            });
+        });
+    </script>
+
   </body>
 </html>

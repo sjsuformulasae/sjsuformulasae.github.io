@@ -28,15 +28,14 @@
 
 </head>
 	<body>
-		<div style="overflow:hidden;">
 		<nav class="main-nav-outer" id="test"><!--main-nav-start-->
 			<div class="container">
-		        <ul style="margin-left: 70px" class="main-nav">
+		        <ul class="main-nav">
 		            <li><a href="aboutUs.html">About Us</a></li>
 		            <li><a href="cars.html">Our Cars</a></li>
-								<li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
-								<li><a class="res-nav-selected" href="sponsors.html">Our Sponsors</a></li>
-								<li><a href="join.html">Get Involved</a></li>
+					<li class="small-logo"><a href="index.html"><img style="width: 90px;" src="img/logo.png" alt=""></a></li>
+					<li><a class="res-nav-selected" href="sponsors.html">Our Sponsors</a></li>
+					<li><a href="join.html">Get Involved</a></li>
 		        </ul>
 		        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
 		    </div>
@@ -376,6 +375,18 @@
 		<!-- <div style="height:1000px; background-color: white;"></div> -->
 		<script src="js/wow.min.js"></script>
 		<script>new WOW().init();</script>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				// Fixed nav-bar
+				$('#nav-bar').scrollToFixed();
+
+				// Hamburger menu
+				$('.res-nav_click').click(function() {
+					$('.main-nav').slideToggle();
+					return false;
+				});
+			});
+		</script>
 		<footer class="footer">
 				<div class="container">
 					<div class="row">
