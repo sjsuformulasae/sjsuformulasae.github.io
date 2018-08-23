@@ -543,12 +543,12 @@ s
 
 /* Team
 ---------------------------------*/
-#general_meeting {
+/* #general_meeting {
 	text-align: center;
 	margin-top: 35px;
 	margin-bottom: -40px;
 	color: green;
-}
+} */
 
 .team-leader-block {
 	max-width: 100%;
