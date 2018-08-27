@@ -553,15 +553,28 @@ s
 .team-leader-block {
 	max-width: 100%;
 	margin: 0px auto;
+	overflow:auto;
 }
 .team-leader-box {
 	width: 33%;
 	padding: 10px 10px 10px 10px;
-	overflow: visible;
+	overflow: auto;
 	text-align: center;
 	float: left;
 }
 .team-leader-box span {
+	margin-bottom: 45px;
+	display: block;
+}
+
+.team-leader-box2 {
+	width: 33%;
+	padding: 10px 10px 10px 10px;
+	overflow: auto;
+	text-align: center;
+	float: left;
+}
+.team-leader-box2 span {
 	margin-bottom: 45px;
 	display: block;
 }
@@ -578,7 +591,7 @@ s
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 	width: 100%;
 	height: 100%;
