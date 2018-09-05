@@ -555,12 +555,18 @@ s
 	margin: 0px auto;
 	overflow:auto;
 }
+.team-leader-block2 {
+	max-width: 100%;
+	margin: 0px auto;
+	overflow:auto;
+}
 .team-leader-box {
-	width: 33%;
+	width: 25%;
 	padding: 10px 10px 10px 10px;
 	overflow: auto;
 	text-align: center;
 	float: left;
+	margin: auto;
 }
 .team-leader-box span {
 	margin-bottom: 45px;
@@ -583,9 +589,9 @@ s
 	width: auto;
 	height: auto;
 	position: relative;
-	border-radius: 50%;
-	box-shadow: 0px 0px 0px 7px rgba(241, 241, 241, 0.8);
-	margin: 7px 7px 25px 7px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 0px 0px rgba(241, 241, 241, 0.8);
+	margin: 7px 7px 7px 7px;
 }
 .team-leader-shadow {
 	transition: all 0.3s ease-in-out;
