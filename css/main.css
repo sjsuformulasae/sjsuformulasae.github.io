@@ -642,30 +642,34 @@
 }
 
 .cb-slideshow span:nth-child(1) {
-	background: url(../img/studentunion-lg.jpg) no-repeat center center fixed;
+	background: url(../img/SR-11 Standing.jpg) no-repeat center center fixed;
 	background-size: cover;
 	animation-delay: 0s;
 }
-
 .cb-slideshow span:nth-child(2) {
-	background: url(../img/team-lg.jpg) no-repeat center center fixed;
+	background: url(../img/SR-11 Action.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 6s;
+	animation-delay: 7s;
 }
 .cb-slideshow span:nth-child(3) {
-	background: url(../img/ontheline-lg.jpg) no-repeat center center fixed;
+	background: url(../img/SR-11 Sunset.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 12s;
+	animation-delay: 14s;
 }
 .cb-slideshow span:nth-child(4) {
-	background: url(../img/onthetrack-lg.jpg) no-repeat center center fixed;
+	background: url(../img/studentunion-lg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 18s;
+	animation-delay: 21s;
 }
 .cb-slideshow span:nth-child(5) {
-	background: url(../img/action-lg.jpg) no-repeat center center fixed;
+	background: url(../img/ontheline-lg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 24s;
+	animation-delay: 28s;
+}
+.cb-slideshow span:nth-child(6) {
+	background: url(../img/onthetrack-lg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	animation-delay: 35s;
 }
 
 @keyframes imageAnimation {
