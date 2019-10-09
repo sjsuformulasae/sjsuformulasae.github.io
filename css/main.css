@@ -638,7 +638,7 @@
 	opacity: 0;
     z-index: 0;
 	filter: brightness(50%);
-    animation: imageAnimation 42s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s;
 }
 
 .cb-slideshow span:nth-child(1) {
@@ -649,27 +649,27 @@
 .cb-slideshow span:nth-child(2) {
 	background: url(../img/SR-11-Action.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 7s;
+	animation-delay: 4s;
 }
 .cb-slideshow span:nth-child(3) {
 	background: url(../img/SR-11-Sunset.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 14s;
+	animation-delay: 8s;
 }
 .cb-slideshow span:nth-child(4) {
 	background: url(../img/studentunion-lg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 21s;
+	animation-delay: 12s;
 }
 .cb-slideshow span:nth-child(5) {
 	background: url(../img/ontheline-lg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 28s;
+	animation-delay: 16s;
 }
 .cb-slideshow span:nth-child(6) {
 	background: url(../img/onthetrack-lg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	animation-delay: 35s;
+	animation-delay: 20s;
 }
 
 @keyframes imageAnimation {
